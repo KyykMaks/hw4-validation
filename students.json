@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Maks Ande",
+    "email": "maks.ande1@example.com",
+    "age": "16",
+    "gender": "male",
+    "avgMark": 9.2,
+    "onDuty": true
+  },
+  {
+    "name": "Oksana Prymak",
+    "email": "oksana.prymak@example.com",
+    "age": "15",
+    "gender": "female",
+    "avgMark": 8.4,
+    "onDuty": false
+  },
+  {
+    "name": "Dmytro Horbunov",
+    "email": "dmytro.h@example.com",
+    "age": "17",
+    "gender": "male",
+    "avgMark": 7.5,
+    "onDuty": false
+  },
+  {
+    "name": "Iryna Melnyk",
+    "email": "iryna.m@example.com",
+    "age": "16",
+    "gender": "female",
+    "avgMark": 9.5,
+    "onDuty": true
+  },
+  {
+    "name": "Oleh Vasylenko",
+    "email": "oleh.v@example.com",
+    "age": "16",
+    "gender": "male",
+    "avgMark": 6.8,
+    "onDuty": true
+  },
+  {
+    "name": "Kateryna Sydor",
+    "email": "kateryna.s@example.com",
+    "age": "15",
+    "gender": "female",
+    "avgMark": 9.8,
+    "onDuty": false
+  },
+  {
+    "name": "Yaroslav Petrenko",
+    "email": "yaroslav.p@example.com",
+    "age": "16",
+    "gender": "male",
+    "avgMark": 8.1,
+    "onDuty": true
+  },
+  {
+    "name": "Alina Demchuk",
+    "email": "alina.d@example.com",
+    "age": "17",
+    "gender": "female",
+    "avgMark": 9.0,
+    "onDuty": false
+  },
+  {
+    "name": "Taras Kryvonos",
+    "email": "taras.k@example.com",
+    "age": "16",
+    "gender": "male",
+    "avgMark": 7.2,
+    "onDuty": true
+  },
+  {
+    "name": "Olha Shulha",
+    "email": "olha.s@example.com",
+    "age": "15",
+    "gender": "female",
+    "avgMark": 8.7,
+    "onDuty": false
+  },
+  {
+    "name": "Bohdan Lytvyn",
+    "email": "bohdan.l@example.com",
+    "age": "17",
+    "gender": "male",
+    "avgMark": 6.9,
+    "onDuty": false
+  },
+  {
+    "name": "Anastasiia Marchuk",
+    "email": "anastasiia.m@example.com",
+    "age": "16",
+    "gender": "female",
+    "avgMark": 9.3,
+    "onDuty": true
+  },
+  {
+    "name": "Volodymyr Chornyi",
+    "email": "volodymyr.c@example.com",
+    "age": "16",
+    "gender": "male",
+    "avgMark": 8.0,
+    "onDuty": true
+  },
+  {
+    "name": "Sofiia Lysenko",
+    "email": "sofiia.l@example.com",
+    "age": "15",
+    "gender": "female",
+    "avgMark": 9.6,
+    "onDuty": false
+  },
+  {
+    "name": "Andrii Shevchenko",
+    "email": "andrii.s@example.com",
+    "age": "17",
+    "gender": "male",
+    "avgMark": 7.9,
+    "onDuty": true
+  },
+  {
+    "name": "Maria Hrytsenko",
+    "email": "maria.h@example.com",
+    "age": "16",
+    "gender": "female",
+    "avgMark": 9.4,
+    "onDuty": false
+  },
+  {
+    "name": "Ivan Datsenko",
+    "email": "ivan.d@example.com",
+    "age": "16",
+    "gender": "male",
+    "avgMark": 6.7,
+    "onDuty": true
+  },
+  {
+    "name": "Natalia Kovalchuk",
+    "email": "natalia.k@example.com",
+    "age": "15",
+    "gender": "female",
+    "avgMark": 8.9,
+    "onDuty": false
+  },
+  {
+    "name": "Serhii Yermak",
+    "email": "serhii.y@example.com",
+    "age": "17",
+    "gender": "male",
+    "avgMark": 7.6,
+    "onDuty": false
+  },
+  {
+    "name": "Liliia Tkachenko",
+    "email": "liliia.t@example.com",
+    "age": "16",
+    "gender": "female",
+    "avgMark": 9.1,
+    "onDuty": true
+  }
+]
