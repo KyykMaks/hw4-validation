@@ -2,9 +2,9 @@ import { isValidObjectId } from "mongoose";
 import createHttpError from "http-errors";
 
 export const isValidId = (req,res,next) => {
-    const { studentId } = req.params;
-    if(!isValidObjectId(studentId)){
-        throw createHttpError(400, `${studentId} is not valid id!`);
+    const { contactId } = req.params;
+    if(!isValidObjectId(contactId)){
+        throw createHttpError(400, `${contactId} is not valid id!`);
     }
     next();
 };

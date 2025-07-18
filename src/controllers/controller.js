@@ -1,80 +1,80 @@
 import {
-  createStudent,
-  deleteStudent,
-  getAllStudents,
-  getStudentById,
-  updateStudent,
-} from '../services/students.js';
+  createContact,
+  deleteContact,
+  getAllContact,
+  getContactById,
+  updateContact,
+} from '../services/contacts.js';
 import createHttpError from 'http-errors';
 import { parsePaginationParams } from '../utils/parsePaginationParams.js';
 import { parseSortParams } from '../utils/parseSortParams.js';
 import { parseFilterParams } from '../utils/parseFilterParams.js';
 
-export const getStudentByIdController = async (req, res) => {
-  const { studentId } = req.params;
-  const student = await getStudentById(studentId);
+export const getContactByIdController = async (req, res) => {
+  const { contactId } = req.params;
+  const contact = await getContactById(contactId);
 
-  if (!student) {
-    throw createHttpError(404, 'Stundent not found');
+  if (!contact) {
+    throw createHttpError(404, 'Contact not found');
   }
 
   res.json({
     status: 200,
-    message: `Successfully found student with id ${studentId}!`,
-    data: student,
+    message: `Successfully found Contact with id ${contactId}!`,
+    data: contact,
   });
 };
 
-export const createStundentController = async (req, res) => {
-  const students = await createStudent(req.body);
+export const createContactController = async (req, res) => {
+  const contacts = await createContact(req.body);
   res.status(201).json({
     status: 201,
-    message: 'Successfully create students!',
-    data: students,
+    message: 'Successfully create contacts!',
+    data: contacts,
   });
 };
 
-export const deleteStudentController = async (req, res) => {
-  const { studentId } = req.params;
-  const student = await deleteStudent(studentId);
-  if (!student) {
-    throw createHttpError(404, 'Stundent not found');
+export const deleteContactController = async (req, res) => {
+  const { contactId } = req.params;
+  const contact = await deleteContact(contactId);
+  if (!contact) {
+    throw createHttpError(404, 'Contact not found');
   }
 
   res.status(204).send();
 };
 
-export const upsertStudentController = async (req, res) => {
-  const { studentId } = req.params;
-  const result = await updateStudent(studentId, req.body, { upsert: true });
+export const upsertContactController = async (req, res) => {
+  const { contactId } = req.params;
+  const result = await updateContact(contactId, req.body, { upsert: true });
 
   if (!result) {
-    throw createHttpError(404, 'Stundent not found');
+    throw createHttpError(404, 'Contact not found');
   }
   const status = result.isNew ? 201 : 202;
   res.status(status).json({
     status,
     message: 'Successful upserd',
-    data: result.student,
+    data: result.contact,
   });
 };
 
-export const patchStudentController = async (req, res) => {
-  const { studentId } = req.params;
-  const result = await updateStudent(studentId, req.body);
+export const patchContactController = async (req, res) => {
+  const { contactId } = req.params;
+  const result = await updateContact(contactId, req.body);
 
   if (!result) {
-    throw createHttpError(404, 'Stundent not found');
+    throw createHttpError(404, 'Contact not found');
   }
-  res.json({ status: 200, message: 'Successful upserd', data: result.student });
+  res.json({ status: 200, message: 'Successful upserd', data: result.contact });
 };
 
-export const getStudentsController = async (req, res) => {
+export const getContactController = async (req, res) => {
   const { page, perPage } = parsePaginationParams(req.query);
   const { sortBy, sortOrder } = parseSortParams(req.query);
   const filter = parseFilterParams(req.query);
 
-  const students = await getAllStudents({
+  const contacts = await getAllContact({
     page,
     perPage,
     sortBy,
@@ -83,7 +83,7 @@ export const getStudentsController = async (req, res) => {
   });
   res.json({
     status: 200,
-    message: 'Successfully found students!',
-    data: students,
+    message: 'Successfully found contacts!',
+    data: contacts,
   });
 };
